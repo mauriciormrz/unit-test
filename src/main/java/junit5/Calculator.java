@@ -30,4 +30,13 @@ public class Calculator {
         result = n1 / n2;
         return result;
     }
+
+    public void longTaskOperation(){
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
